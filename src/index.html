@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <a ui-sref="hello" ui-sref-active="active">Hello</a>
+    <a ui-sref="about" ui-sref-active="active">About</a>
+
+    <ui-view></ui-view>
+</div>
+
+<script src="./lib/angular.js"></script>
+<script src="./lib/angular-ui-router.js"></script>
+<script src="./js/modules/routeStyles.js"></script>
+
+<script src="./app.js"></script>
+<script src="./router.js"></script>
+
+
+<script src="./js/controllers/helloCtrl.js"></script>
+<script src="./js/controllers/aboutCtrl.js"></script>
+
+
+</body>
+</html>
