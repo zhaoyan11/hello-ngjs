@@ -11,7 +11,10 @@ const states = [
         url: '/about',
         templateUrl: './templates/about.html',
         controller: 'AboutCtrl',
-        css: './css/about.css'
+        css: './css/about.css',
+        lazyLoad: function () {
+            return System.import('demo.js');
+        }
     }
 ];
 
